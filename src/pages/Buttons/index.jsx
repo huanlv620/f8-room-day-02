@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import Button from '../../components/Button';
 import styles from './Buttons.module.scss';
-console.log(styles);
 
 function Buttons() {
     return (

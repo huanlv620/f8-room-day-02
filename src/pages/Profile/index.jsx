@@ -5,8 +5,6 @@ function Profile() {
     const [profile, setProfile] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    console.log(profile);
-
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users/1')
             .then((res) => res.json())
