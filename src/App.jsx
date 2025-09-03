@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router';
 import './styles/reset.scss';
 
 import Navigation from './components/Navigation';
@@ -26,7 +26,7 @@ const routes = [
 function App() {
     return (
         <div>
-            <Router>
+            <HashRouter>
                 <Navigation />
                 <Routes>
                     {routes.map((item, index) => {
@@ -35,7 +35,7 @@ function App() {
                         return <Route key={index} path={item.to} element={item.el} />;
                     })}
                 </Routes>
-            </Router>
+            </HashRouter>
         </div>
     );
 }
