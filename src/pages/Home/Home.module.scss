@@ -1,0 +1,152 @@
+.home {
+    padding: 40px 20px;
+    color: #e2e8f0;
+    background: #0b1220;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+// ========== Hero ==========
+.hero {
+    text-align: center;
+    margin-bottom: 48px;
+
+    &__title {
+        font-size: clamp(28px, 5vw, 42px);
+        font-weight: 800;
+        margin-bottom: 12px;
+
+        span {
+            background: linear-gradient(90deg, #6366f1, #22d3ee);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &__subtitle {
+        color: #94a3b8;
+        margin-bottom: 20px;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+// ========== Buttons ==========
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    padding: 0 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+
+    &--primary {
+        background: linear-gradient(135deg, #6366f1, #22d3ee);
+        color: #0b1020;
+    }
+
+    &--ghost {
+        border: 1px solid rgba(148, 163, 184, 0.3);
+        color: #e2e8f0;
+        background: rgba(148, 163, 184, 0.1);
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+// ========== Stats ==========
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 48px;
+
+    &__item {
+        background: rgba(15, 23, 42, 0.6);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 10px;
+        padding: 16px 24px;
+        text-align: center;
+    }
+
+    &__num {
+        font-size: 24px;
+        font-weight: 800;
+        display: block;
+    }
+
+    &__label {
+        color: #94a3b8;
+        font-size: 13px;
+    }
+}
+
+// ========== Features ==========
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 48px;
+
+    &__card {
+        background: rgba(15, 23, 42, 0.85);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        transition: 0.2s;
+
+        &:hover {
+            transform: translateY(-4px);
+            border-color: #6366f1;
+        }
+    }
+
+    &__icon {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    &__desc {
+        font-size: 14px;
+        color: #94a3b8;
+    }
+}
+
+// ========== Footer ==========
+.footer {
+    margin-top: auto;
+    padding: 20px 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+    text-align: center;
+
+    &__text {
+        font-size: 14px;
+        color: #94a3b8;
+    }
+
+    &__brand {
+        font-weight: 700;
+        background: linear-gradient(90deg, #22d3ee, #6366f1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
